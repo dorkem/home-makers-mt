@@ -13,8 +13,12 @@ import streamlit as st
 # =========================
 st.set_page_config(page_title="MT 실시간 의견/투표 대시보드", page_icon="🗳️", layout="wide")
 st.title("🗳️ MT 의견·투표 대시보드")
-st.caption("양식 1조 투표/대시보드 입니다!\n 참고로 해당 프로그램은 사용자의 편의를 \"전혀(NEVER이라는 뜻)\" 고려하지 않았습니다.\n편의가 필요하다면 입급 DM 쿠다사이")
-
+st.caption(
+    "양식 1조 투표/대시보드 입니다!<br>"
+    "참고로 해당 프로그램은 사용자의 편의를 \"전혀\"(NEVER이라는 뜻) 고려하지 않았습니다.<br>"
+    "편의가 필요하다면 입급 DM 쿠다사이",
+    unsafe_allow_html=True
+)
 # 자동 새로고침(선택)
 REFRESH_MS = 2000
 try:
