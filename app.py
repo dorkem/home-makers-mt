@@ -13,7 +13,7 @@ import streamlit as st
 # =========================
 st.set_page_config(page_title="MT 실시간 의견/투표 대시보드", page_icon="🗳️", layout="wide")
 st.title("🗳️ MT 의견·투표 대시보드")
-st.caption("음식 1조 투표/대시보드 입니다!")
+st.caption("양식 1조 투표/대시보드 입니다!\n 참고로 해당 프로그램은 사용자의 편의를 \"전혀(NEVER이라는 뜻)\" 고려하지 않았습니다.\n편의가 필요하다면 입급 DM 쿠다사이")
 
 # 자동 새로고침(선택)
 REFRESH_MS = 2000
@@ -148,7 +148,7 @@ def fetch_ideas(category: str, user_id: str):
 # =========================
 # 공통 렌더링 함수
 # =========================
-CATEGORY_LABELS = {"food": "🍽️ 음식 메뉴 정하기", "festival": "🎉 축제 활동 정하기"}
+CATEGORY_LABELS = {"food": "🍽️ 양식 메뉴 정하기", "festival": "🎉 축제 활동 정하기"}
 
 SECTION_HELP = {
     "food": "정해진 사항은 케이크에 보석을 숨기는 것 이지만, 자유롭게 의견 정해주세요!",
