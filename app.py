@@ -212,7 +212,7 @@ def render_category(category_code: str):
                     st.markdown(f"**{idea['content']}**")
                     st.caption(datetime.fromisoformat(idea["created_at"]).strftime("%Y-%m-%d %H:%M"))
                 with cols[1]:
-                    st.markdown(f"현재 투표수: **{idea['votes']}**")
+                    st.markdown(f"투표수: **{idea['votes']}**")
                 with cols[2]:
                     btn_label = "❌" if idea["i_voted"] else "👍️"
                     if st.button(btn_label, key=f"vote_{category_code}_{idea['id']}"):
